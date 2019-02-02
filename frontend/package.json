@@ -1,0 +1,30 @@
+{
+  "name": "circlegps-next",
+  "version": "1.0.0",
+  "description": "Move CircleGPS to NextJS",
+  "main": "index.js",
+  "events": {
+    "restart": "fuser -k 7777/tcp"
+  },
+  "scripts": {
+    "dev": "next -p 7777",
+    "build": "next build",
+    "start": "next start",
+    "test": "NODE_ENV=test jest --watch",
+    "heroku-postbuild": "next build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^7.0.2",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "1.16.3"
+  }
+}

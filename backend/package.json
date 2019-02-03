@@ -1,13 +1,12 @@
 {
   "name": "open-gps-backend",
   "version": "1.0.0",
-  "description": "Back-end for openGPS",
-  "main": "index.js",
+  "description": "OpenGPS backend",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon -e js,graphql -x node src/index.js",
+    "dev": "nodemon -e js,graphql -x node --inspect src/index.js",
+    "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "bcryptjs": "2.4.3",
@@ -23,5 +22,11 @@
     "prisma": "1.17.1",
     "prisma-binding": "2.1.6",
     "stripe": "^6.12.1"
+  },
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env"
+    ]
   }
 }

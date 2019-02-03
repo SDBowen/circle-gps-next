@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Nav from "./nav/Nav";
 import Meta from "./Meta";
 
-import "../scss/styles.scss";
+import "../style/style.scss";
 
 class Page extends Component {
   render() {

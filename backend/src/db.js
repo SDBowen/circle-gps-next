@@ -1,4 +1,4 @@
-// Prisma DB connection and schema detail
+// Connection to Prisma DB and schema detail
 
 const { prisma } = require("prisma-binding");
 

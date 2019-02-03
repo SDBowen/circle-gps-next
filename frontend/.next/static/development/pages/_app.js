@@ -369,17 +369,19 @@ var _jsxFileName = "/home/steven/Programming/Projects/circle-gps/app-next/fronte
 
 
 
+nprogress__WEBPACK_IMPORTED_MODULE_2___default.a.configure({
+  showSpinner: false
+});
 
 next_router__WEBPACK_IMPORTED_MODULE_1___default.a.onRouteChangeStart = function () {
+  console.log("nprogress");
   nprogress__WEBPACK_IMPORTED_MODULE_2___default.a.start();
 };
 
-next_router__WEBPACK_IMPORTED_MODULE_1___default.a.onRouteChangeComplete = function () {
-  nprogress__WEBPACK_IMPORTED_MODULE_2___default.a.done();
+next_router__WEBPACK_IMPORTED_MODULE_1___default.a.onRouteChangeComplete = function () {// NProgress.done();
 };
 
-next_router__WEBPACK_IMPORTED_MODULE_1___default.a.onRouteChangeError = function () {
-  nprogress__WEBPACK_IMPORTED_MODULE_2___default.a.done();
+next_router__WEBPACK_IMPORTED_MODULE_1___default.a.onRouteChangeError = function () {// NProgress.done();
 };
 
 var Nav = function Nav() {
@@ -387,58 +389,58 @@ var Nav = function Nav() {
     className: "top-nav__header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "top-nav__logo-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "top-nav__logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "https://res.cloudinary.com/dk9vbfmw6/image/upload/v1549146635/circlegps-logo-nobg.png",
     alt: "Logo",
-    class: "top-nav__logo-image",
+    className: "top-nav__logo-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 28
     },
     __self: this
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "user-nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    to: "/add-device",
+    href: "/settings",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "user-nav__icon-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icons__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -446,28 +448,28 @@ var Nav = function Nav() {
     name: "cog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "user-nav__label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: this
   }, "Settings"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    to: "/",
+    href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "user-nav__icon-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icons__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -475,14 +477,14 @@ var Nav = function Nav() {
     name: "exit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 45
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "user-nav__label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 46
     },
     __self: this
   }, "Logout")))));

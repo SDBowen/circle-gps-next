@@ -7,7 +7,7 @@ type User {
 type Device {
   id: ID! @unique
   name: String!
-  description: String!
+  deviceId: String!
   createdAt: DateTime!
   updatedAt: DateTime!
   # user: User!

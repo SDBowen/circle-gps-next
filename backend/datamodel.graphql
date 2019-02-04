@@ -1,0 +1,14 @@
+type User {
+  id: ID! @unique
+  name: String!
+  email: String!
+}
+
+type Device {
+  id: ID! @unique
+  name: String!
+  description: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  # user: User!
+}

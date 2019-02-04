@@ -8,16 +8,15 @@ import "./Nav.scss";
 NProgress.configure({ showSpinner: false });
 
 Router.onRouteChangeStart = () => {
-  console.log("nprogress");
   NProgress.start();
 };
 
 Router.onRouteChangeComplete = () => {
-  // NProgress.done();
+  NProgress.done();
 };
 
 Router.onRouteChangeError = () => {
-  // NProgress.done();
+  NProgress.done();
 };
 
 const Nav = () => (

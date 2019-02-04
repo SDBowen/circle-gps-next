@@ -1,8 +1,12 @@
 import Link from "next/link";
 
+import Devices from "../components/devices/Devices";
+import AddDevice from "../components/addDevice/AddDevice";
+
 const Settings = props => (
-  <div>
-    <p>Here is the settings page</p>
+  <div className="section-settings">
+    <AddDevice />
+    <Devices />
   </div>
 );
 

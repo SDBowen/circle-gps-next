@@ -1,0 +1,61 @@
+.device-card {
+  width: 20rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #d189d9;
+
+  flex-direction: column;
+
+  &__detail {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    display: flex;
+
+    > *:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    border-top: 0.1rem solid #ccc;
+  }
+  &__button {
+    // margin: 1rem 1rem;
+    flex: 1 1 50%;
+
+    // Remove default button style
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: #b02bbf;
+    }
+
+    &--edit {
+      height: 3rem;
+
+      border-right: solid 0.1px #ccc;
+    }
+    &--delete {
+      border-left: solid 0.1px #ccc;
+    }
+  }
+}

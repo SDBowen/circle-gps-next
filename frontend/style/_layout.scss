@@ -1,0 +1,14 @@
+// Settings page
+.section-settings {
+  // height: 98vh;
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+
+  & > *:last-child {
+    margin-top: 10rem;
+  }
+}

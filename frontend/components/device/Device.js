@@ -14,7 +14,7 @@ class Device extends Component {
     return (
       <div className="device-card">
         <div className="device-card__detail">
-          <p className="device-card__name">{device.name}</p>
+          <p className="device-card__name">{device.deviceName}</p>
           <p className="device-card__id">{device.deviceId}</p>
         </div>
         <div className="device-card__actions">

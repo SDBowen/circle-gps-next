@@ -9,7 +9,7 @@ const ALL_DEVICE_QUERY = gql`
   query ALL_DEVICE_QUERY {
     devices {
       id
-      name
+      deviceName
       deviceId
     }
   }
@@ -38,3 +38,4 @@ class Devices extends Component {
 }
 
 export default Devices;
+export { ALL_DEVICE_QUERY };

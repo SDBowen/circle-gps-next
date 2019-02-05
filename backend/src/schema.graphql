@@ -1,7 +1,7 @@
 # import * from './generated/prisma.graphql'
 
 type Mutation {
-  createDevice(name: String, deviceId: String): Device!
+  createDevice(deviceName: String, deviceId: String): Device!
 }
 
 type Query {

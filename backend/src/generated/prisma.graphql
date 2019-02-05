@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/steven-bowen/opengps/dev
-# timestamp: Mon Feb 04 2019 14:59:20 GMT-0700 (Mountain Standard Time)
+# timestamp: Mon Feb 04 2019 17:20:28 GMT-0700 (Mountain Standard Time)
 
 type AggregateDevice {
   count: Int!
@@ -18,7 +18,7 @@ scalar DateTime
 
 type Device implements Node {
   id: ID!
-  name: String!
+  deviceName: String!
   deviceId: String!
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -35,7 +35,7 @@ type DeviceConnection {
 }
 
 input DeviceCreateInput {
-  name: String!
+  deviceName: String!
   deviceId: String!
 }
 
@@ -51,8 +51,8 @@ type DeviceEdge {
 enum DeviceOrderByInput {
   id_ASC
   id_DESC
-  name_ASC
-  name_DESC
+  deviceName_ASC
+  deviceName_DESC
   deviceId_ASC
   deviceId_DESC
   createdAt_ASC
@@ -63,7 +63,7 @@ enum DeviceOrderByInput {
 
 type DevicePreviousValues {
   id: ID!
-  name: String!
+  deviceName: String!
   deviceId: String!
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -109,12 +109,12 @@ input DeviceSubscriptionWhereInput {
 }
 
 input DeviceUpdateInput {
-  name: String
+  deviceName: String
   deviceId: String
 }
 
 input DeviceUpdateManyMutationInput {
-  name: String
+  deviceName: String
   deviceId: String
 }
 
@@ -167,46 +167,46 @@ input DeviceWhereInput {
 
   """All values not ending with the given string."""
   id_not_ends_with: ID
-  name: String
+  deviceName: String
 
   """All values that are not equal to given value."""
-  name_not: String
+  deviceName_not: String
 
   """All values that are contained in given list."""
-  name_in: [String!]
+  deviceName_in: [String!]
 
   """All values that are not contained in given list."""
-  name_not_in: [String!]
+  deviceName_not_in: [String!]
 
   """All values less than the given value."""
-  name_lt: String
+  deviceName_lt: String
 
   """All values less than or equal the given value."""
-  name_lte: String
+  deviceName_lte: String
 
   """All values greater than the given value."""
-  name_gt: String
+  deviceName_gt: String
 
   """All values greater than or equal the given value."""
-  name_gte: String
+  deviceName_gte: String
 
   """All values containing the given string."""
-  name_contains: String
+  deviceName_contains: String
 
   """All values not containing the given string."""
-  name_not_contains: String
+  deviceName_not_contains: String
 
   """All values starting with the given string."""
-  name_starts_with: String
+  deviceName_starts_with: String
 
   """All values not starting with the given string."""
-  name_not_starts_with: String
+  deviceName_not_starts_with: String
 
   """All values ending with the given string."""
-  name_ends_with: String
+  deviceName_ends_with: String
 
   """All values not ending with the given string."""
-  name_not_ends_with: String
+  deviceName_not_ends_with: String
   deviceId: String
 
   """All values that are not equal to given value."""

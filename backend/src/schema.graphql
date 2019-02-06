@@ -2,8 +2,10 @@
 
 type Mutation {
   createDevice(deviceName: String, deviceId: String): Device!
+  updateDevice(id: ID!, deviceName: String, deviceId: String): Device!
 }
 
 type Query {
   devices: [Device]!
+  device(where: DeviceWhereUniqueInput!): Device
 }

@@ -1,0 +1,41 @@
+.add-device-box {
+  flex-direction: column;
+
+  display: flex;
+
+  &__header {
+    justify-content: space-between;
+
+    display: flex;
+  }
+  &__links-box {
+    display: flex;
+  }
+  &__link {
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:last-child {
+      margin-left: 2rem;
+    }
+  }
+  &__option {
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    display: flex;
+  }
+  &__form {
+    & > * {
+      margin-top: 1rem;
+    }
+  }
+
+  &__submit-button {
+    height: 3.5rem;
+    width: 100%;
+  }
+}

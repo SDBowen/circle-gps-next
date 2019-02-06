@@ -12,6 +12,19 @@ const Mutations = {
     console.log(device);
 
     return device;
+  },
+  updateDevice(parent, args, ctx, info) {
+    const deviceUpdates = { ...args };
+
+    delete deviceUpdates.id;
+
+    return ctx.db.mutation.updateDevice(
+      {
+        data: deviceUpdates,
+        where: { id: args.id }
+      },
+      info
+    );
   }
 };
 

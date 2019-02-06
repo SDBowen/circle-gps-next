@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 import './Device.scss';
+import '../DeleteDevice';
+import DeleteDevice from '../DeleteDevice';
 
 class Device extends Component {
   static propTypes = {
@@ -26,14 +28,7 @@ class Device extends Component {
           >
             <a className="device-card__button device-card__button--edit">Edit</a>
           </Link>
-          <Link
-            href={{
-              pathname: 'update',
-              query: { id: device.id }
-            }}
-          >
-            <a className="device-card__button device-card__button--delete">Delete</a>
-          </Link>
+          <DeleteDevice id={device.id}>Delete Device</DeleteDevice>
         </div>
       </div>
     );

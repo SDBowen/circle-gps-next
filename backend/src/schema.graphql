@@ -3,6 +3,7 @@
 type Mutation {
   createDevice(deviceName: String, deviceId: String): Device!
   updateDevice(id: ID!, deviceName: String, deviceId: String): Device!
+  deleteDevice(id: ID!): Device
 }
 
 type Query {

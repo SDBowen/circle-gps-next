@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { Mutation } from "react-apollo";
-import gql from "graphql-tag";
-import Router from "next/router";
-import Error from "../ErrorMessage";
-import "./AddDevice.scss";
+import React, { Component } from 'react';
+import { Mutation } from 'react-apollo';
+import gql from 'graphql-tag';
+import Router from 'next/router';
+import Error from '../ErrorMessage';
+import './AddDevice.scss';
 
 const CREATE_DEVICE_MUTATION = gql`
   mutation CREATE_DEVICE_MUTATION($deviceName: String!, $deviceId: String!) {
@@ -15,8 +15,8 @@ const CREATE_DEVICE_MUTATION = gql`
 
 class addDevice extends Component {
   state = {
-    deviceName: "Another test",
-    deviceId: "test2"
+    deviceName: '',
+    deviceId: ''
   };
 
   // State is updated on user input
@@ -53,7 +53,7 @@ class addDevice extends Component {
                 const res = await createDevice();
 
                 // TODO replace with device list update
-                Router.push("/");
+                Router.push('/');
               }}
             >
               <div className="add-device-box__device-name">

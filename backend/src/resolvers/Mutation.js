@@ -25,6 +25,15 @@ const Mutations = {
       },
       info
     );
+  },
+  async deleteDevice(parent, args, ctx, info) {
+    const where = { id: args.id };
+
+    const device = await ctx.db.query.device({ where }, '{id deviceName}');
+
+    // TODO check if device belongs to user
+
+    return ctx.db.mutation.deleteDevice({ where }, info);
   }
 };
 

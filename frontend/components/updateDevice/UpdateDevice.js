@@ -95,7 +95,7 @@ class updateDevice extends Component {
                     </div>
                     <div className="add-device-box__submit">
                       <button className="add-device-box__submit-button" type="submit">
-                        Sav{loading ? 'ing' : 'e'} Changes
+                        {loading ? 'Saving Changes' : 'Save Changes'}
                       </button>
                     </div>
                   </form>
